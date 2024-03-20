@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @layer module, state;
+
+        @layer state {
+            .alert {
+                background-color: brown;
+            }
+            p {
+                border: medium solid limegreen;
+            }
+        }
+
+        @layer module {
+            .alert {
+                border: medium solid violet;
+                background-color: yellow;
+                color: white;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<p class="alert">Beware of the zombies</p>
+
+</body>
+</html>
